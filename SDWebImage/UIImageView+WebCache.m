@@ -138,7 +138,7 @@ static char TAG_ACTIVITY_SHOW;
 }
 
 - (void)sd_cancelCurrentImageLoad {
-    [self sd_cancelImageLoadOperationWithKey:@"UIImageViewImageLoad"];
+    [self sd_cancelImageLoadOperationWithKey:self.sd_imageURL];
 }
 
 - (void)sd_cancelCurrentAnimationImagesLoad {
